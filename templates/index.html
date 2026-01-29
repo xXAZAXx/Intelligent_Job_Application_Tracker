@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+    <div class="hero-left">
+        <h1>Track your job applications.<br>Effortlessly.</h1>
+
+        <p class="hero-text">
+            A lightweight job application tracker to help you manage statuses,
+            notes, and progress — all in one place.
+        </p>
+
+        <div class="hero-actions">
+            <a href="/table" class="btn btn-primary btn-large">Open App</a>
+            <a target="_blank" href="https://www.linkedin.com/in/abdullah-zafar/" class="btn btn-secondary btn-large">Contact Me</a>
+        
+        </div>
+    </div>
+
+    <div class="hero-right">
+        <div class="hero-preview">
+        <img src="{{ url_for('static', filename='images/hero_image.png') }}"
+            alt="Job Application Tracker Preview">
+              
+    </div>
+    </div>
+</section>
+
+<section class="demo">
+    <h2>See it in action</h2>
+    <p class="subtitle">A quick walkthrough of the application workflow.</p>
+
+    <div class="video-container">
+        <iframe
+            src="https://www.youtube.com/embed/S3ZLExbg0bM"
+            title="Job Application Tracker Demo"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+
+</section>
+<section class="roadmap">
+    <div class="roadmap-card">
+        <h2>Roadmap</h2>
+        <p class="subtitle">Planned improvements and future features</p>
+
+        <ul class="roadmap-list">
+            <li>
+                <strong>📄 Pagination</strong>
+                <span> - Improve performance and usability for large job lists</span>
+            </li>
+            <li>
+                <strong>🧩 Browser Extension</strong>
+                <span> - One-click "Add Job" browser extension to save applications
+                directly from job boards</span>
+            </li>
+            <li>
+                <strong>🔎Resume Matching (ML)</strong>
+                <span> - Analyze a user's resume and compare it against job requirements</span>
+            </li>
+            <li>
+                <strong>📊 Insights & Analytics</strong>
+                <span> - Visualize application outcomes, response rates and
+                    highlight missing skills</span>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+{% endblock %}
+
+

@@ -1,0 +1,478 @@
+
+/* ---------- Base ---------- */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: #f4f6f8;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+/* ---------- Nav ---------- */
+.nav {
+    background: #222;
+    padding: 15px;
+}
+
+.nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Headings ---------- */
+h1 {
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+    padding: 7px 15px;
+    border-radius: 7px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    padding: 7px 15px;
+    height: 32px;
+    line-height: 1;
+    font-size: 15px;
+    font-family: inherit;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.btn-primary {
+    background: #04AA6D;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #03925d;
+}
+
+.btn-edit {
+    background: #2196F3;
+    color: white;
+    margin-bottom: 5px;
+   
+}
+.btn:hover {
+    opacity: 0.9;
+}
+
+
+.btn-edit:hover {
+    background: #1976D2;
+}
+
+.btn-delete:hover {
+    background: #d32f2f;
+    
+}
+
+.btn-delete {
+    background: #f44336;
+    color: white;
+  
+}
+
+.inline {
+    display: inline;
+}
+.input-button{
+    margin-bottom: 15px;
+    padding: 5px;
+    width: 301px;
+}
+/* ---------- Table ---------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* ---------- Badges ---------- */
+.badge {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    color: white;
+}
+
+.applied { background: gray; }
+.interview { background: orange; }
+.oa { background: purple; }
+.offer { background: green; }
+.rejected { background: red; }
+
+/* ---------- Forms ---------- */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+}
+
+label {
+    font-weight: 600;
+    display: block;
+    margin-top: 15px;
+}
+
+select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+}
+/* ---------- Home / Hero ---------- */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.hero-card {
+    background: white;
+    padding: 50px 60px;
+    border-radius: 16px;
+    text-align: center;
+    max-width: 600px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.hero-card h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero-card .subtitle {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.hero-actions {
+    margin-top: 20px;
+}
+
+.btn-large {
+    font-size: 16px;
+    padding: 14px 28px;
+    border-radius: 10px;
+}
+/* ---------- Hero ---------- */
+.hero {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.hero-left h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    font-size: 16px;
+    color: #555;
+    max-width: 500px;
+}
+
+.hero-actions {
+    margin-top: 30px;
+}
+
+.btn-secondary {
+    background: #e9eef3;
+    color: #333;
+}
+
+.btn-secondary:hover {
+    background: #dfe5eb;
+}
+
+/* ---------- Hero Right ---------- */
+.hero-right {
+    display: flex;
+    justify-content: center;
+}
+
+.mockup {
+    width: 100%;
+    max-width: 420px;
+    height: 260px;
+    background: linear-gradient(135deg, #04AA6D, #03925d);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+/* ---------- Demo Section ---------- */
+.demo {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.demo h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.video-placeholder {
+    margin: 40px auto;
+    max-width: 800px;
+    height: 420px;
+    background: #111;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bbb;
+    font-size: 18px;
+}
+/* ---------- Footer ---------- */
+.footer {
+    margin-top: 120px;
+    padding: 20px;
+    text-align: center;
+    background: #f0f2f5;
+    color: #666;
+    font-size: 13px;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-content {
+    flex: 1;   /* THIS pushes the footer down */
+}
+
+.footer {
+    text-align: center;
+    padding: 16px;
+    background: #111;
+    color: #aaa;
+}
+.notes-input {
+    width: 100%;
+    max-width: 420px;
+
+    padding: 8px 10px;
+    font-size: 14px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+table {
+    width: 100%;
+    table-layout: fixed;   /* 🔑 critical */
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.col-company   { width: 12%; }
+.col-title     { width: 20%; }
+.col-location  { width: 14%; }
+.col-platform  { width: 8%; }
+.col-date      { width: 8%; white-space: nowrap; text-align: center; }
+.col-status    { width: 8%; text-align: center; }
+.col-notes     { width: 22%; }
+.col-actions   { width: 8%; text-align: center; }
+
+
+
+.notes-cell {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;       /* 👈 max 2 lines */
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+    word-break: break-word;
+    white-space: normal;
+    line-height: 1.4;
+}
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;   /* ✅ FIX */
+}
+.col-date {
+    white-space: nowrap;
+}
+.col-status,
+.col-actions {
+    text-align: center;
+}
+
+/* ---------- TABLE LAYOUT FIX ---------- */
+table {
+    width: 100%;
+    table-layout: fixed;      /* REQUIRED */
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+
+/* Cell alignment */
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+/* ---------- REMOVES BUTTON UNDERLINES ---------- */
+.btn {
+    text-decoration: none !important;
+}
+
+/* ---------- ACTION BUTTON CONSISTENCY ---------- */
+.col-actions .btn {
+    min-width: 90px;
+}
+
+/* ---------- NOTES CLAMP (2 lines max) ---------- */
+.notes-cell {
+    max-height: 3.2em;        /* ~2 lines */
+    line-height: 1.6;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+
+.notes-cell:hover {
+    white-space: normal;
+    max-height: none;
+}
+/* ---------- Roadmap Section ---------- */
+.roadmap {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.roadmap-card {
+    background: #ffffff;
+    border: 1px solid #e4e8ee;
+    border-radius: 16px;
+    padding: 40px 50px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+}
+
+.roadmap-card h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.roadmap-card .subtitle {
+    margin-bottom: 30px;
+}
+
+.roadmap-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.roadmap-list li {
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 14px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.roadmap-list li:last-child {
+    border-bottom: none;
+}
+
+.hero-preview {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-preview img {
+    width: 750px;
+    border-radius: 16px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+    background: white;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto;
+    aspect-ratio: 16 / 9;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}

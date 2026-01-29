@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}Applications{% endblock %}
+
+{% block content %}
+<h1>Applications</h1>
+<div>
+    <form action="/new-posting" method="POST" class="inline">
+        <input class="input-button" type="text" name="url" placeholder="Add Link Here" autocomplete="off">
+        <button class="btn btn-primary">
+            Add 
+        </button>
+    </form>
+</div>
+
+<table>
+    <tr>
+        <th class="col-company">Company</th>
+        <th class="col-title">Job Title</th>
+        <th class="col-location">Location</th>
+        <th class="col-platform">Platform</th>
+        <th class="col-date">Date</th>
+        <th class="col-status">Status</th>
+        <th class="col-notes">Notes</th>
+        <th class="col-actions">Actions</th>
+    </tr>
+
+    {% for job in jobs %}
+   <tr>
+        <td class="col-company">{{ job.company }}</td>
+        <td class="col-title">{{ job.job_title }}</td>
+        <td class="col-location">{{ job.location }}</td>
+        <td class="col-platform">{{ job.platform }}</td>
+        <td class="col-date">{{ job.created[:10] }}</td>
+        <td class="col-status">
+            <span class="badge {{ job.status|lower }}">{{ job.status }}</span>
+        </td>
+       <td class="col-notes">
+        <span class="notes-cell">{{ job.notes }}</span>
+       </td>
+        <td class="col-actions">
+            <a href="/edit/{{ job.id }}" class="btn btn-edit">Update</a>
+            <form action="/delete-job" method="POST" class="inline">
+                <input type="hidden" name="job_id" value="{{ job.id }}">
+                <button class="btn btn-delete"
+                    onclick="return confirm('Delete this job application?')">
+                    Delete
+                </button>
+            </form>
+        </td>
+    </tr>
+
+    {% endfor %}
+</table>
+{% endblock %}

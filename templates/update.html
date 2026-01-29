@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Edit{% endblock %}
+
+{% block content %}
+<h1>Edit Application</h1>
+
+<p class="job-header">
+    <strong>{{ job.company }}</strong> — {{ job.job_title }}
+</p>
+
+<form method="POST" class="card">
+    <label>Status</label>
+    <select name="status">
+        {% for s in ["Applied", "Interview", "OA", "Offer", "Rejected"] %}
+        <option value="{{ s }}" {% if s == job.status %}selected{% endif %}>{{ s }}</option>
+        {% endfor %}
+    </select>
+
+    <label>Notes (max 40 characters)</label>
+    <textarea name="notes" class="notes-textarea" maxlength="40" rows="3">{{ job.notes }}</textarea>
+
+    <div class="actions">
+        <button class="btn btn-primary">Save</button>
+        <a href="/table" class="btn">Cancel</a>
+    </div>
+</form>
+{% endblock %}
+
